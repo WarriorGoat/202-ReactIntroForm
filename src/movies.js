@@ -100,3 +100,5 @@ const movies = [
       dateAdded: new Date(),
     },
   ];
+
+  export default movies;

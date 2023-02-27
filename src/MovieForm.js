@@ -27,7 +27,10 @@ class MovieForm extends Component {
   submitMovieForm = () => {
     console.log("onFormSubmit");
     // event.preventDefault();
+    const newDate = new Date().toLocaleDateString();
+    this.setState({ dateAdded: newDate });
     this.props.handleSubmit(this.state);
+    this.initalState.dateAdded = newDate;
     this.setState(this.initalState);
   };
 
@@ -40,7 +43,6 @@ class MovieForm extends Component {
           type="number"
           name="year"
           id="year"
-          // placeholder="Enter Year Released"
           autoComplete="Off"
           value={year}
           onChange={this.handleChange}
@@ -74,7 +76,6 @@ class MovieForm extends Component {
           step="0.1"
           name="imdbRating"
           id="imdbRating"
-          // placeholder="Enter IMDB Rating"
           autoComplete="Off"
           value={imdbRating}
           onChange={this.handleChange}

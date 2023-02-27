@@ -23,24 +23,23 @@ class App extends Component {
   } 
 
 
-  addMovie = (index) => {
-    const {movieList} = this.state
-    this.setState({
-
-    })
+  handleSubmit = (movie) =>{
+    console.log("form submitted")
+    this.setState({movieList: [...this.state.movieList, movie]})
   }
 
   render() {  
     // we are passing the movies from state and the removeMovie function that we wrote so table can use it later on 
+    const {movieList} = this.state;
     return ( // make sure return only returns one html element!
       <div className="container"> 
-        <Header name="Dom"/>
-        
+        <Header className="Dom"/>
         <Table 
           movieData={this.state.movieList} 
           removeMovie={this.removeMovie} 
         /> 
-        {/* <MovieForm addMovie={this.addMovie}/> */}
+        <h2>Add a new movie</h2>
+        <MovieForm handleSubmit={this.handleSubmit}/>
       </div>
     );
   };

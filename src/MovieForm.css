@@ -1,0 +1,69 @@
+form {
+    display: flex;
+    justify-content: center;
+    color: rgb(227, 227, 248);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+label {
+    font-weight: bold;
+    padding: 5px;
+}
+input[type=text] {
+    width: 40%;
+    padding: 10px;
+    margin: 4px 0;
+    border-radius: 25px;
+    border: 2px solid rgb(18, 24, 186);
+    box-sizing: border-box;
+  }
+
+  input[type=text]:hover {
+    width: 40%;
+    padding: 10px;
+    margin: 4px 0;
+    border-radius: 25px;
+    border: 2px solid red;
+    box-sizing: border-box;
+  }
+
+  input[type=number] {
+    width: 40%;
+    padding: 10px;
+    margin: 4px 0;
+    border-radius: 25px;
+    border: 2px solid rgb(18, 24, 186);
+    box-sizing: border-box;
+  }
+
+  input[type=number]:hover {
+    width: 40%;
+    padding: 10px;
+    margin: 4px 0;
+    border-radius: 25px;
+    border: 2px solid red;
+    box-sizing: border-box;
+  }
+
+  input[type=button] {
+
+    padding: 10px;
+    margin: 4px 0;
+    background-color: gray;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-weight: bold;
+    
+  }
+  input[type=button]:hover {
+    padding: 10px;
+    margin: 4px 0;
+    background-color: rgb(53, 52, 52);
+    color: white;
+    border: 2px solid red;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-weight: bold;
+  }

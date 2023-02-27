@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import movies from "./movies";
+import "./MovieForm.css";
 
 class MovieForm extends Component {
   constructor(props) {
@@ -35,46 +35,6 @@ class MovieForm extends Component {
     const { title, director, actors, plot, year, imdbRating } = this.state;
     return (
       <form>
-        <label htmlFor="title">Title: </label>
-        <input
-          type="text"
-          name="title"
-          id="title"
-          placeholder="Enter Title"
-          autoComplete="Off"
-          value={title}
-          onChange={this.handleChange}
-        /><br />
-        <label htmlFor="director">Director: </label>
-        <input
-          type="text"
-          name="director"
-          id="director"
-          placeholder="Enter Director"
-          autoComplete="Off"
-          value={director}
-          onChange={this.handleChange}
-        /><br />
-        <label htmlFor="actors">Actors: </label>
-        <input
-          type="text"
-          name="actors"
-          id="actors"
-          placeholder="Enter Actors"
-          autoComplete="Off"
-          value={actors}
-          onChange={this.handleChange}
-        /><br />
-        <label htmlFor="plot">Plot: </label>
-        <input
-          type="text"
-          name="plot"
-          id="plot"
-          placeholder="Enter Plot"
-          autoComplete="Off"
-          value={plot}
-          onChange={this.handleChange}
-        /><br />
         <label htmlFor="year">Year: </label>
         <input
           type="number"
@@ -84,7 +44,30 @@ class MovieForm extends Component {
           autoComplete="Off"
           value={year}
           onChange={this.handleChange}
-        ></input><br />
+        ></input>
+        <br />
+        <label htmlFor="title">Title: </label>
+        <input
+          type="text"
+          name="title"
+          id="title"
+          placeholder="Enter Title"
+          autoComplete="Off"
+          value={title}
+          onChange={this.handleChange}
+        />
+        <br />
+        <label htmlFor="director">Director: </label>
+        <input
+          type="text"
+          name="director"
+          id="director"
+          placeholder="Enter Director"
+          autoComplete="Off"
+          value={director}
+          onChange={this.handleChange}
+        />
+        <br />
         <label htmlFor="imdbRating">IMDB Rating: </label>
         <input
           type="number"
@@ -95,7 +78,31 @@ class MovieForm extends Component {
           autoComplete="Off"
           value={imdbRating}
           onChange={this.handleChange}
-        /><br />
+        />
+        <br />
+        <label htmlFor="plot">Plot: </label>
+        <input
+          type="text"
+          name="plot"
+          id="plot"
+          placeholder="Enter Plot"
+          autoComplete="Off"
+          value={plot}
+          onChange={this.handleChange}
+        />
+        <br />
+        <label htmlFor="actors">Actors: </label>
+        <input
+          type="text"
+          name="actors"
+          id="actors"
+          placeholder="Enter Actors"
+          autoComplete="Off"
+          value={actors}
+          onChange={this.handleChange}
+        />
+        <br />
+
         <input type="button" value="Submit" onClick={this.submitMovieForm} />
       </form>
     );

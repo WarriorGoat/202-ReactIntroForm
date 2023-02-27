@@ -1,6 +1,7 @@
 //Table React Component 
 
 import React, { Component } from "react";
+import "./Table.css";
 
 // create two simple function components to make our table code more readable
 
@@ -37,7 +38,7 @@ const TableBody = (props) => {
           <td> {row.imdbRating} </td>
           <td>{row.plot}</td>
           <td>{row.actors}</td>
-          <td><button onClick={() => props.removeMovie(index)}> Delete</button></td>
+          <td class = "deleteButton"><button onClick={() => props.removeMovie(index)}> Delete</button></td>
         </tr>
       )
     })
